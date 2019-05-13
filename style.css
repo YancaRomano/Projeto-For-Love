@@ -209,7 +209,7 @@ li {
 }
 footer {
 	width: 100vw;
-	 height: 32vh;
+	height: 32vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -218,34 +218,43 @@ footer {
 .containerFooter__Icone__img{
 	width: 80px;
 	height: 80px;
-	margin-left: 80px;
+	margin-left: 100px;
+	margin-top: 0;
 }
 p {
 	color:#fff;
-	width: 13vw;
+	width: 15vw;
 	font-weight:bold;
-	margin-left: 80px;
+	margin-left: 100px;
 	margin-top:0;
 	margin-bottom:0;
 }
 .containerFooterContatos{
-	width: 40vw;
+	width: 70vw;
 	display: flex;
 	flex-direction: column;
-	margin-left: 200px;
+	align-items: flex-start;
+	margin-left: 190px;
+	background-color: green;
 }
 .containerFooterContatos__icoetxt{
+	width: 15px;
+	height: 15px;
 	display: flex;
-	align-items: flex-start;
 	margin: .5rem 0;
+	/*background-color: yellow;*/
 }
 .containerFooterContatos__img{
-	width: 20px;
+	width: 15px;
+	height: 15px;
 	margin-right: .5rem;
 	margin-left: 100px;
+	/*background-color: blue;*/
 }
-.containerFooterContatos__txt{
+.containerFooterContatos__txt{	
 	margin-left: 3px;
+	align-items: center;
+	/*background-color: red;*/
 }
 .containerFooter_FOTOS{	
 	width: 10vw;
@@ -271,29 +280,65 @@ p {
 	position: absolute;
 }
 .containerFooter_BASE{
+	background-color: #fff;
 	display: flex;
 	justify-content: center;
-	margin-top: 10px;
 	width: 100%;
 	height: 8vh;
 }
 .containerFooter_BASE_authorship{
-	width: 250px;
-	font-size: 10px;
+	width: 130px;
+	font-size: 13px;
 	color: black;
 	margin-top: 10px;
-	margin-left: 500px;
 	font-family: sans-serif;
 }
 .containerFooter_BASE_logo{
-	display: flex;
-	flex-direction: row;
-	width: 5vw;
 	height: 5vh;
-	align-items: center;
-	margin-right: 630px;
-	margin-bottom: 200px;
+	margin-right: 150px;
 }
+.containerFooter__texto{
+	width: 175px;
+}
+@media (max-width: 768px){
+	footer{
+		height: 350px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.containerFooter__Icone__img{
+		width: 90px;
+		height: 90px;
+		margin-left: 0;
+	}
+	p{
+		width: 15vw;
+		margin-left: 0;
+	}
+	.containerFooterContatos{
+		width: 70vw;
+		display: flex;
+		justify-content: center;
+		margin-left: 0;
+	}
+	.containerFooterContatos__icoetxt{
+		/*width: 15px;*/
+		display: flex;
+	}
+	.containerFooterContatos__txt{
+		/*width: 10px;*/
+		display: flex;
+	}
+	.containerFooter_FOTOS{
+		display: none;
+	}
+	.containerFooter_BASE{
+		display: flex;
+		width: 30px;
+	}
+}
+
 
 
 
