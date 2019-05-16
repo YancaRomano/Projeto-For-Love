@@ -10,6 +10,134 @@ body {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	background-color: #EFF6F8;
+}
+header{
+	width: 100%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	padding: 8px;
+	background-color: #EFF6F8;
+}
+.containerHeader__blockone{
+	width: 100vw;
+	height: 3vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 12px;
+}
+.containerHeader__logo{
+	width: 60px;
+	height: 60px;
+	margin-left: 20px;
+}
+.containerHeader__menu{
+	width: 35vw;
+	height: 20vh;
+	display: flex;
+	justify-content: space-around;
+	background-color:transparent;
+	margin-right: 400px;
+}
+.containerHeader__menuLink{
+	font-size: 18px;
+	color: #BC503B;
+}
+.containerHeader__principal{
+	width: 100%;
+	height: 65%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.containerHeader__text{
+	width: 35%;
+	display: flex;
+	justify-content: center;
+	font-weight: 900;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #939393;
+	margin-left: 130px;
+}
+.containerHeader__photo{
+	height: 700px;
+	background-color: transparent;
+}
+@media (max-width: 768px){
+	header{
+		padding: 0;
+	}
+	.containerHeader__logo{
+		width: 45px;
+		height: 45px;
+	}
+	.containerHeader__blockone {
+		height: 70px;
+		background-color: #fff;
+	}
+	.containerHeader__menu{
+		width: 60vw;
+		margin-right: 120px;
+	}
+	.containerHeader__menuLink{
+		font-size: 16px; 
+	}
+	.containerHeader__principal {
+		flex-direction: column-reverse;
+	}
+	.containerHeader__photo{
+		height: 550px;
+	}
+	.containerHeader__text{
+		width: 50vh;
+		font-size: 30px;
+		margin-left: 0;
+	}
+}
+@media(max-width: 604px){
+	.containerHeader__menu {
+		width: 60vw;
+		margin-right: 55px;
+		padding: 10px;
+	}
+	.containerHeader__photo{
+		height: 440px;
+	}
+	.containerHeader__text{
+		width: 60%;
+		font-size: 30px;
+		text-align: center;
+	}
+		.containerHeader__aquarela{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+@media(max-width: 425px){
+	.containerHeader__logo{
+		width: 45px;
+		height: 45px;
+		margin: 0;
+	}
+	.containerHeader__menu {
+		width: 60vw;
+		margin-right: 55px;
+	}
+	.containerHeader__photo{
+		height: 435px;
+	}
+	.containerHeader__text{
+		width: 90%;
+		font-size: 30px;
+		text-align: center;
+	}
+	.containerHeader__aquarela{
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }
 main {
 	width: 100%;
@@ -45,11 +173,11 @@ main {
 }
 .containerobjetivos {
 	width: 100%;
-	height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction: row;
+	background-color: #fff;
 }
 .containerobjetivos__blockfirst {
 	width: 30vw;
@@ -80,7 +208,7 @@ main {
 }
 .containerprodutos {
 	width: 100%;
-	height: 56vh;
+	height: 55vh;
 	display: flex;
 	justify-content: space-around;
 	background-color: #EFF6F8; 
@@ -100,7 +228,7 @@ main {
 	flex-direction: column;
 }
 .containerprodutos__paragrafo {
-	width: 160px;
+	width: 190px;
 	font-size: 18px;
 	align-self: center;
 	color: #3E4D4F;
@@ -110,15 +238,16 @@ main {
 }
 .blocklist {
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: 900;
 	color: #3E4D4F;
 }
 @media (max-width: 768px) {
 	.containerlove {
+		margin-top: 50px;
 		flex-direction: column-reverse;
 	}
-	.containerobjetivos {
-		height: 96vh;
+	.containerlove__paragrafo {
+		line-height: 2;
 	}
 	.containerobjetivos__blockfirst {
 		width: 100%;
@@ -152,6 +281,10 @@ main {
 	.blocklist {
 		font-size: 16px;
 	}
+	.blocknoorder {
+		width: 50%;
+		margin-top: 20px;
+	}
 }
 @media (max-width: 605px) {
 	.containerlove {
@@ -161,7 +294,6 @@ main {
 		line-height: 2;
 	}
 	.containerobjetivos {
-		height: 80vh;
 		flex-direction: column-reverse;
 	}
 	.containerobjetivos__blockfirst {
@@ -181,7 +313,6 @@ main {
 		flex-direction: column-reverse;
 	}
 	.containerprodutos__blockfirst {
-	    width: 50%;
 	    height: 30vh;
 	    order: 1;
 	}
@@ -225,10 +356,7 @@ main {
 		width: 320px;
 	}
 	.containerprodutos__img {
-		height: 250px;
-	}
-	.containerprodutos__blocksecond {
-		width: 300px;
+		height: 210px;
 	}
 	.blocknoorder {
 		width: 50%;
