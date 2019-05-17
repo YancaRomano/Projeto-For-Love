@@ -12,19 +12,15 @@ footer{
 }
 .containerfooter{
 	width: 100%;
-	padding: 10px;
+	padding: 30px;
 	display: flex;
 	/*height: 320px;*/
+	margin: 0;
 	justify-content: space-around;
 	align-items: center;
 	font-size: 20px;
 	font-weight: bold;
 	background-color: #DA3F30;
-}
-@media(max-width: 768px){
-	.containerfooter{
-		flex-direction: column;
-	}
 }
 .containerfooter__forlove{
 	width: 200px;
@@ -45,17 +41,6 @@ footer{
 	font-weight: bold;
 	width: 220px;
 	font-size: 20px;
-
-}
-@media(max-width: 768px){
-	.containerfooter__forlove{
-		width: 100%;
-		align-items: center;
-		text-align: center;
-	}
-	.containerfooter__texto{
-		margin-top: 30px;
-	}
 }
 .containerfooter__contatos{
 	height: 20vh;
@@ -116,11 +101,6 @@ footer{
 	bottom: 5px;
 	right: 40px;
 }
-@media(max-width: 780px){
-	.containerfooter__fotos{
-		display: none;
-	}
-}
 .containerfooter__foto__one{
 	position: absolute;
 	right: 60px;
@@ -136,18 +116,32 @@ footer{
 	justify-content: center;
 	align-items: center;
 	/*background-color: yellow;*/
-}
+	}
 @media(max-width: 780px){
 	.containerfooter__base{
 		justify-content: center;
 	}
-}
 .containerfooter_base__authorship{
-	font-size: 11px;
-	font-weight: 600;
-}
+		font-size: 11px;
+		font-weight: 600;
+	}
 .containerfooter__base__logo{
-	width: 40px;
-	height: 40px;
-	margin-left: 5px;
+		width: 40px;
+		height: 40px;
+		margin-left: 5px;
+	}
+.containerfooter{
+		flex-direction: column;
+	}
+	.containerfooter__forlove{
+		width: 100%;
+		align-items: center;
+		text-align: center;
+	}
+	.containerfooter__texto{
+		margin-top: 30px;
+	}
+	.containerfooter__fotos{
+		display: none;
+	}
 }
