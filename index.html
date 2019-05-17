@@ -6,49 +6,50 @@
 		<link rel="stylesheet" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/fav.ico">
 	</head>
 	<body>
 		<header>
 			<div class="containerHeader__blockone">
-				<img src="assets/logored.png" class="containerHeader__logo">
+				<img src="assets/logored.png" class="containerHeader__logo" alt="logo">
 				<nav class="containerHeader__menu">
-					<a href="" class="containerHeader__menuLink">Sobre</a>
-					<a href="" class="containerHeader__menuLink">Serviços</a>
-					<a href="" class="containerHeader__menuLink">Contato</a>
+					<a href="#sobre" class="containerHeader__menuLink">Sobre</a>
+					<a href="#serviços" class="containerHeader__menuLink">Serviços</a>
+					<a href="#contatos" class="containerHeader__menuLink">Contato</a>
 				</nav>
 			</div>
 				<section class="containerHeader__principal">
 					<p class="containerHeader__text">sua camisa vira ação social</p>
-					<img src="assets/girlaquarela.png" class="containerHeader__photo">
+					<img src="assets/girlaquarela.png" class="containerHeader__photo" alt="Foto da garota conm aquarela">
 				</section>
 		</header>
 
 		<main>
 			<section class="containerlove">
 				<div class="containerlove__blockfirst">
-					<img class="containerlove__img" src="assets/casal.png">
+					<img class="containerlove__img" src="assets/casal.png" alt="Foto do casal">
 				</div>
-				<div class="containerlove__blocksecond">
+				<div class="containerlove__blocksecond" id="sobre">
 					<p class="containerlove__paragrafo">A FOR LOVE é um negócio social criado para formar e empregar pessoas em situação de vulnerabilidade social na comunidade de Jardim Catarina, em São Gonçalo</p><br>
-					<p class="containerlove__paragrafo">100% do lucro é reinvestido para capacitação, remuneração e ampliação de melhorias de infraestrutura para funcionários e sustento da organização. </p>
+					<p class="containerlove__paragrafo">100% do lucro é reinvestido para capacitação, remuneração e ampliação de melhorias de infraestrutura para funcionários e sustento da organização.</p>
 				</div>
 			</section>
 			<section class="containerobjetivos">
 				<div class="containerobjetivos__blockfirst">
-					<img class="containerobjetivos__photos"src="assets/img1.png">
-					<img class="containerobjetivos__photos"src="assets/img2.png">
-					<img class="containerobjetivos__photos"src="assets/img3.png">					
+					<img class="containerobjetivos__photos"src="assets/img1.png" alt="Foto casal com a camisa">
+					<img class="containerobjetivos__photos"src="assets/img2.png" alt="Foto dos produtos">
+					<img class="containerobjetivos__photos"src="assets/img3.png" alt="Foto da galera">					
 				</div>
 				<div class="containerobjetivos__blocksecond">
 					<h1 class="containerobjetivos__title">OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL - ONU</h1>
-					<img class="containerobjetivos__table" src="assets/global.png">
+					<img class="containerobjetivos__table" src="assets/global.png" alt="Foto da tabela">
 				</div>
 			</section>
 			<section class="containerprodutos">
 				<div class="containerprodutos__blockfirst">
-					<img class="containerprodutos__img" src="assets/tshirt.png">
+					<img class="containerprodutos__img" src="assets/tshirt.png" alt="Foto da tshirt com caneca e ecobags">
 				</div>
-				<div class="containerprodutos__blocksecond">
+				<div class="containerprodutos__blocksecond" id="serviços">
 					<p class="containerprodutos__paragrafo">Traga sua arte ou solicite</p>
 					<p class="containerprodutos__paragrafo">uma arte personalizada ao</p>
 					<p class="containerprodutos__paragrafo">nosso estúdio</p>
@@ -63,28 +64,34 @@
 			</section>
 		</main>
 		<footer>
-			<section class="containerFooter">
-				<div class="containerFooter__missao">
-					<img src="assets/logowhite.png">
-					<p class="containerFooter__paragrafo">Quer contribuir com essa missão?</p>
+			<div class="containerfooter">
+				<div class="containerfooter__forlove">
+					<img class="containerfooter__icone__img" src="assets/logowhite.png" alt="logo for love">
+					<p class="containerfooter__texto">Quer contribuir com esta missão?</p>
 				</div>
-				<div class="containerFooter__contacts">
-					<div class="containerFooter__network">
-						<img class="containerFooter__networkLogo" src="assets/celphone.png"><p class="blockListNetwork">(21) 97461-7740</p>
+				<div class="containerfooter__contatos">
+					<div class="containerfooterContatos__icoetxt-01">
+						<img class="containerfooterContatos__img-1" src="assets/celphone.png" alt="ícone telefone">
+						<p class="containerfooterContatos__txt-01">(21) 97461-7740</p>
 					</div>
-					<div class="containerFooter__network">	
-						<img class="containerFooter__networkLogo" src="assets/instagram.png"><p class="blockListNetwork">forloveoficial</p>
+					<div class="containerfooterContatos__icoetxt-02">
+						<img class="containerfooterContatos__img-2" src="assets/instagram.png" alt="ícone instagram">
+						<p class="containerfooterContatos__txt-02">forloveoficial</p>
 					</div>
-					<div class="containerFooter__network">	
-						<img class="containerFooter__networkLogo" src="assets/facebook.png"><p class="blockListNetwork">forloveporamor</p>
-					</div>	
+					<div class="containerfooterContatos__icoetxt-03">				
+						<img class="containerfooterContatos__img-3" src="assets/facebook.png" alt="ícone facebook">
+						<p class="containerfooterContatos__txt-03">forloveporamor</p>
+					</div>
 				</div>
-				<div class="containerFooter__photo">
-					<img class="containerFooter__img" src="assets/img_one_footer.png">
-					<img class="containerFooter__imgtwo" src="assets/img_two_footer.png">
+				<div class="containerfooter__fotos">
+					<img class="containerfooter__foto__one" src="assets/img_one_footer.png" alt="foto homem e mulher">	
+					<img class="containerfooter__foto__two" src="assets/img_two_footer.png" alt="foto homem e mulher">
 				</div>
-			</section>
-			<p class="containerFooter__base"> Desenvolvido por <img class="containerFooter__baseLogo"src="assets/logo-vnw.svg"></p>
+			</div>
+			<div class="containerfooter__base">
+				<p class="containerfooter_base__authorship">Desenvolvido por</p>
+				<img class="containerfooter__base__logo" src="https://www.vainaweb.com.br/assets/Logo-VnW.svg" alt="logo VainaWeb">
+			</div>
 		</footer>
 	</body>
 </html>

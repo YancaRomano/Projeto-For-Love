@@ -83,7 +83,8 @@ header{
 		margin-right: 120px;
 	}
 	.containerHeader__menuLink{
-		font-size: 16px; 
+		font-size: 19px; 
+		margin: 10px;
 	}
 	.containerHeader__principal {
 		flex-direction: column-reverse;
@@ -102,6 +103,10 @@ header{
 		width: 60vw;
 		margin-right: 55px;
 		padding: 10px;
+	}
+	.containerHeader__menuLink{
+		font-size: 19px; 
+		margin: 0;
 	}
 	.containerHeader__photo{
 		height: 440px;
@@ -127,7 +132,7 @@ header{
 		margin-right: 55px;
 	}
 	.containerHeader__photo{
-		height: 435px;
+		height: 430px;
 	}
 	.containerHeader__text{
 		width: 90%;
@@ -218,7 +223,7 @@ main {
 	height: 55vh;
 }
 .containerprodutos__img {
-	height: 385px;
+	height: 405px;
 }
 .containerprodutos__blocksecond {
 	width: 50%;
@@ -244,33 +249,42 @@ main {
 	.containerlove__paragrafo {
 		line-height: 2;
 	}
+	.containerobjetivos {
+		height: auto;
+	}
 	.containerobjetivos__blockfirst {
 		width: 100%;
-		height: 35vh;
+		height: auto;
 		flex-direction: row;
 		justify-content: space-between;
 	}
 	.containerobjetivos__blocksecond {
 		width: 100%;
-		height: 60vh;
+		height: auto;
 		margin: 0;
 	}
 	.containerobjetivos__title {
 		width: 65%;
 		font-size: 18px;
 		margin: 0;
+		margin-top: 20px;
 	}
 	.containerobjetivos__table {
     	width: 520px;
 	}
 	.containerprodutos {
-		width: 100%;
-		height: 60vh;
+		height: auto;
 		justify-content: center;
 		align-items: center;
 	}
+	.containerprodutos__blockfirst {
+		height: auto;
+	}
 	.containerprodutos__img {
-		height: 300px;
+		height: 330px;
+	}
+	.containerprodutos__blocksecond {
+		margin: 30px;
 	}
 	.containerprodutos__paragrafo {
 		font-size: 16px;
@@ -284,10 +298,11 @@ main {
 		line-height: 2;
 	}
 	.containerobjetivos {
+		height: auto;
 		flex-direction: column-reverse;
 	}
 	.containerobjetivos__blockfirst {
-		height: 25vh;
+		height: auto;
 	}
 	.containerobjetivos__photos {
 		height: 120px;
@@ -296,21 +311,21 @@ main {
     	width: 390px;
     }
     .containerobjetivos__blocksecond {
-    	height: 50vh;
+    	height: auto;
     }
 	.containerprodutos{
-		height: 100vh;
+		height: auto;
 		flex-direction: column-reverse;
 	}
 	.containerprodutos__blockfirst {
-	    height: 45vh;
+	    height: auto;
 	    order: 1;
 	}
 	.containerprodutos__img {
-    	height: 265px;
+    	height: 250px;
 	}
 	.containerprodutos__blocksecond {
-		height: 65vh;
+		height: auto;
 		order: 2;
 	}
 	.containerprodutos__paragrafo {
@@ -322,16 +337,16 @@ main {
 		height: 360px;
 	}
 	.containerobjetivos {
-		height: 65vh;
+		height: auto;
 	}
 	.containerobjetivos__blockfirst {
-		height: 15vh;
+		height: auto;
 	}
 	.containerobjetivos__photos {
 		height: 100px;
 	}
 	.containerobjetivos__blocksecond {
-		height: 45vh;
+		height: auto;
 	}
 	.containerobjetivos__title {
 		font-size: 18px;
@@ -339,89 +354,153 @@ main {
 	.containerobjetivos__table {
 		width: 320px;
 	}
+	.containerprodutos {
+    	height: auto;
+	}
+	.containerprodutos__blockfirst {
+		height: auto;
+	}
 	.containerprodutos__img {
-		height: 230px;
+		height: 175px;
 	}
 }
-.containerFooter {
-	width: 100vw;
-	height: 35vh;
+footer{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.containerfooter{
+	width: 100%;
+	padding: 30px;
+	display: flex;
+	height: 45vh;
+	margin: 0;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #DA3F30;
+}
+.containerfooter__forlove{
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+.containerfooter__icone__img{
+	width: 110px;
+	height: 120;
+	justify-content: center;
+}
+.containerfooter__texto{
+	width: 220px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+.containerfooter__contatos{
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+.containerfooterContatos__icoetxt-01{
+	display: flex;
+	font-weight: bold;
+	align-items: center;
+}
+.containerfooterContatos__img-1{
+	width: 20px;
+	height: 20px;
+}
+.containerfooterContatos__txt-01{
+	color: #fff;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.containerfooterContatos__icoetxt-02{
+	display: flex;
+	font-weight: bold;
+	align-items: center;	
+}
+.containerfooterContatos__img-2{
+	width: 20px;
+	height: 20px;
+}
+.containerfooterContatos__txt-02{
+	color: #fff;
+	margin-left: 5px;
+}
+.containerfooterContatos__icoetxt-03{
+	display: flex;
+	font-weight: bold;
+	align-items: center;
+}
+.containerfooterContatos__img-3{
+	width: 20px;
+	height: 20px;
+}
+.containerfooterContatos__txt-03{
+	color: #fff;
+	margin-left: 5px;
+}
+.containerfooter__fotos{
+	display: flex;
+	padding: 30px;
+	position: relative;
+	bottom: 5px;
+	right: 40px;
+}
+.containerfooter__foto__one{
+	height: 270px;
+	position: absolute;
+	right: 60px;
+}
+.containerfooter__foto__two{
+	height: 270px;
+	position: relative;
+	left: 110px;
+}
+.containerfooter__base{
+	width: 100%;
+	padding: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #DA3F30; 
-	padding: 125px;
 }
-.containerFooter__missao {
-	width: 33vw;
-	color: #fff;
-	font-weight: 900;
-}
-.containerFooter__paragrafo {
-	width: 45vw;
-}
-.containerFooter__contacts {
-	width: 25vw;
-	color: #fff;
-	font-weight: 900;
-}
-.containerFooter__network{
-	display: flex;
-	padding-top: 25px;
-}
-.containerFooter__networkLogo {
-	height: 20px;
-	margin-right: 5px;
-}
-.containerFooter__photo {
-	width: 20vw;
-	display: flex;
-	position: relative;
-	bottom: 5px;
-	right: 70px;
-}
-.containerFooter__img {
-	height: 230px;
-	position: absolute;
-	right: 30px;
-}
-.containerFooter__imgtwo {
-	height: 230px;
-	position: relative;
-	left: 200px;
-}
-.containerFooter__base {
+.containerfooter_base__authorship {
 	font-size: 13px;
-	text-align: center;
-	padding: 10px;
 }
-.containerFooter__baseLogo {
-	height: 30px;
+.containerfooter__base__logo {
+	width: 40px;
 }
-@media(max-width: 768px){
-	.containerFooter{
-		height: 90vh;
+@media(max-width: 780px){
+	.containerfooter{
+		height: auto;
 		flex-direction: column;
-		justify-content: center;
+	}
+	.containerfooter__forlove{
+		width: 100%;
 		align-items: center;
-		padding: 0;
-	}
-	.containerFooter__missao{
-		margin-top: 30px;
-	}
-	.containerFooter__paragrafo {
 		text-align: center;
-		font-size: 18px;
-		margin-top: 20px;
 	}
-	.containerFooter__contacts {
-		width: 40%;
+	.containerfooter__texto{
 		margin-top: 30px;
 	}
-	.containerFooter__photo{
+	.containerfooter__fotos{
 		display: none;
 	}
-	.containerFooter__base{
+	.containerfooter__base{
+		background-color: #fff;
 		justify-content: center;
+	}
+	.containerfooter__base__logo{
+		width: 40px;
+		height: 40px;
+		margin-left: 5px;
 	}
 }
